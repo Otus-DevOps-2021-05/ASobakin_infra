@@ -34,7 +34,6 @@ Host 10.130.0.29
 bastion_IP = 178.154.252.224
 someinternalhost_IP = 10.128.0.35
 
-
 4. Добавьте "Labels" cloud-bastion к вашему Pull Request
 
  
