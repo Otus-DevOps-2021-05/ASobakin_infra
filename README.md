@@ -5,11 +5,11 @@
 
 1. Выполните задание про подключение через бастион хост.(Исследовать способ подключения к someinternalhost в одну
 команду из вашего рабочего устройства)
-В сети Infra Развернуто 2 ВМ bastion (c публичным IP 178.154.225.93) и  someintrnalhost без публичного доступа (внутренний 10.130.0.29)
+В сети Infra Развернуто 2 ВМ bastion (c публичным IP 178.154.252.224) и  someintrnalhost без публичного доступа (внутренний 10.128.0.35)
 Предлагается воспользоваться командой ProxyCommand (https://rtfm.co.ua/ssh-podklyuchenie-v-privatnuyu-set-cherez-bastion-i-nemnogo-pro-multiplexing/)
 Изменим файл ~/.ssh/config
 
-Host 178.154.225.93
+Host 178.154.252.224
     User appuser
     IdentityFile  /home/asobakin/.ssh/asobakin_main_openssh
    
@@ -17,10 +17,10 @@ Host 178.154.225.93
 
 Host 10.130.0.29
     User appuser
-    ProxyCommand ssh -W %h:%p  178.154.225.93
+    ProxyCommand ssh -W %h:%p  178.154.252.224
     IdentityFile  /home/asobakin/.ssh/asobakin_nomain
 
-Конект ssh 10.130.0.29
+Конект ssh 10.128.0.35
 
 Подключение прошло успешно.
 
@@ -31,8 +31,8 @@ Host 10.130.0.29
 
 3. Опишите в README.md и получившуюся конфигурацию и данные для подключения в следующем формате (формат важен для проверки!).
 
-bastion_IP = 178.154.225.93
-someinternalhost_IP = 10.130.0.29
+bastion_IP = 178.154.252.224
+someinternalhost_IP = 10.128.0.35
 
 
 4. Добавьте "Labels" cloud-bastion к вашему Pull Request
