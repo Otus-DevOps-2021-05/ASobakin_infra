@@ -1,0 +1,10 @@
+#cloud-config
+users:
+ - name: yc-user
+   groups: sudo
+   shell: /bin/bash
+   sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh-authorized-keys:
+     -ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDHPbcNWAJmoPbj6xbATu/nAj5N3ItZz/rt>
+runcmd:
+ - curl https://raw.githubusercontent.com/Otus-DevOps-2020-11/asobakin_infra/cloud-testapp/install_ruby.sh | bash && curl https://raw.githubusercontent.com/Otus-DevOps-2020-11/asobakin_infra/cloud-testapp/install_mongodb.sh | bash && curl https://raw.githubusercontent.com/Otus-DevOps-2020-11/asobakin_infra/cloud-testapp/deploy.sh | bash
