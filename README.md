@@ -52,4 +52,12 @@ testapp_port = 9292
 # Модели управления инфраструктурой. Подготовка образов с помощью Packer(HW_7)
 Изучены параметры Packer
 Создан файл variables.json.examples с вымышленными значениями.Файл с реальными добавлен к .gitignore.
+ 
+ # Знакомство с Terraform(HW_8)
+Изучены параметры Terraform
+Описана инфраструктура при помощи terraform и провайдера yandex. Выложен файл terraform.tfvars.example
 
+# Основные компоненты terraform (HW_9)
+Созданны два шаблона виртуальной машины: app.json и db.json
+Созданные модули terraform: app and db
+Созданы разные окружения с использованием модулей: stage and prod.
