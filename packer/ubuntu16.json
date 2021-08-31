@@ -20,6 +20,7 @@
             "script": "./scripts/install_ruby.sh",
             "execute_command": "sudo bash -x {{.Path}}"
         },
+		
         {
             "type": "shell",
             "script": "./scripts/install_mongodb.sh",
