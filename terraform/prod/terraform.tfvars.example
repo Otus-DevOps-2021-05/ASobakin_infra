@@ -1,0 +1,8 @@
+cloud_id                 = "b1gevthojdgba60l08p0"
+folder_id                = "b1gtcs52lgttpfoohbp4"
+zone                     = "ru-central1-a"
+image_id                 = "fd8ne7gobqkubo4vbqmf"
+public_key_path          = "~/.ssh/appuser.pub"
+private_key_path         = "~/.ssh/appuser"
+subnet_id                = "e9bqa754hpu9brb79avq"
+service_account_key_file = "/Users/asobakin/key.json"
