@@ -1,23 +1,22 @@
 {
-"builders": [
-        {
-            "type": "yandex",
-            "service_account_key_file": "{{ user `service_account_key_file` }}",
-            "folder_id": "b1gmcbvsb39pnjf538la",
-            "source_image_family": "ubuntu-1604-lts",
-            "image_name": "reddit-base-{{timestamp}}",
-            "image_family": "reddit-base",
-            "ssh_username": "ubuntu",
-            "platform_id": "standard-v1",
-            "use_ipv4_nat": "true"
-        }
-
-    ],
-
-"provisioners": [
-       {
-            "type": "ansible",
-            "playbook_file": "ansible/playbooks/packer_db.yml"
-       }
-    ]
+  "builders": [
+    {
+      "type": "yandex",
+      "service_account_key_file": "{{user `service_account_key_file`}}",
+      "folder_id": "{{user `folder_id`}}",
+      "source_image_family": "{{user `source_image_family`}}",
+      "image_name": "reddit-db-base",
+      "image_family": "{{user `image_family`}}",
+      "ssh_username": "ubuntu",
+      "platform_id": "standard-v1",
+      "use_ipv4_nat": true
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "ansible",
+  "playbook_file": "ansible/playbooks/packer_db.yml"
+    }
+  ]
+  
 }

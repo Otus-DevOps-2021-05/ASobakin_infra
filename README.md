@@ -70,5 +70,6 @@ testapp_port = 9292
 
 Сформированы reddit_app_one_play.yml reddit_app_multiple_plays.yml так же  db.yml app.yml deploy.yml и для управления ими site.yml. Выполнена интеграция Ansible в Packer
 
+# Ansible: работа с ролями и окружениями (HW_12)
 
-
+описали роли app db, окружения, использовали комьюнити роль nginx.
