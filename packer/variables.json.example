@@ -1,7 +1,6 @@
 {
-        "token": "0987654321",
-        "folder_id": "b1glxcvasdfwervn",
-        "source_image_id": "fd8tgasdfasdgftlnjod",
-        "path_to_service_account": "/Users/asobakin/key.json",
-        "disk_type": "network-hdd"
+  "service_account_key_file": "packer/key.json.example",
+  "folder_id": "FOLDER_ID",
+  "source_image_family": "ubuntu-1604-lts",
+  "image_family": "reddit-full"
 }
